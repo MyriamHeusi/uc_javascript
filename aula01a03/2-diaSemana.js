@@ -18,6 +18,7 @@ if ((diaDaSemana == "Sabado" || diaDaSemana == "Domingo")) {
     mensagemSaida ="Trabalho";
 }
 
+console.log(mensagemSaida, "b");
 console.log(mensagemSaida, "e");
 console.log("o tamanho da mensagem de saida é de: ",mensagemSaida.length);
 console.log("Mensagem em letras maiusuculas é: ",mensagemSaida.toUpperCase());
