@@ -6,12 +6,7 @@ Se o valor do produto for maior ou igual a 1000 (>=1000),
 Caso o valor do produto não seja maior ou igual a 1000, deverá ser aplicado um desconto de 10% sobre esse valor.*/
 
 //não esquecer de iniciar variaveis
-let anoFabricacao = 1999;
-let valorProduto = 500;
-let desconto = 0.00; //importante iniciar para nao dar valor not definid
-const taxa10 = 0.1;
-const taxa20 = 0.2;
-const taxa25 = 0.25;
+
 
 if (valorProduto >= 1000) {
    //se ano de fabricacao for maior que 2000
@@ -23,10 +18,6 @@ if (valorProduto >= 1000) {
 } else {
    desconto = valorProduto * taxa10;
 }
-
-
-
-
 
 //testar com valor do produto maior que 1000 e menor que 1000
 console.log("Valor do desconto é de R$: ", desconto);
