@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica e Algoritmos - Exercícios</title>
+</head>
+
+<body>
+<!--Um hotel cobra R$150,00 a diária e mais uma taxa de serviços. A taxa
+de serviços é de:
+
+ R$8,00 por diária, se o número de diárias for < 15;
+ R$6,30 por diária, se o número de diárias for = 15;
+
+ R$5,00 por diária, se o número de diárias for > 15.
+
+Construa um algoritmo que imprima o nome e a conta de cada cliente do hotel.
+Imprima também o total ganho pelo hotel. -->
+
+    <script type="text/javascript">
+        <!-- insira seu código aqui -->
+let nome ="";
+let numDiarias=0;
+let conta=0;
+let: ganhoTotalHotel=0;
+
+const diaria=0;
+const taxaMaior15dias=8.00;
+const taxaMenor15dias=5.00;
+const taxa15Dias=6.30;
+let taxaDiaria;
+
+
+let qntCliente= prompt("Informe a quantidade de clientes que deram baixa no hotel: " );
+qntCliente=parseInt(qntCliente);
+
+for(var contador=0; contador<qntCliente;contador++){
+
+nome = prompt("Digite o nome do cliente: ");
+numDiarias = prompt("Informe o numero de diarias:");
+numDiarias=parseInt(numDiarias);
+
+
+if (numDiarias == 15) {
+        taxaDiaria=taxa15Dias;
+    } else if (numDiarias < 15) {
+        taxaDiaria=taxaMenor15dias;
+    } else {
+        taxaMaior15dias;
+    }
+
+//calcular a conta do Cliente
+conta=(numDiarias * diaria) + (numDiarias * taxaDiaria);
+}
+
+//calcular Ganho do Hotel
+ganhoTotalHotel=ganhoTotalHotel+conta;
+
+//calcular quantidade de clientes no hotel
+
+
+
+//saida
+document.writeln("<p>");
+document.writeln("Nome do cliente: ", nome);
+document.writeln("</p>");
+
+document.writeln("<p>");
+document.writeln("Valor da conta R$: ", conta);
+document.writeln("</p>");
+
+document.writeln("<p>");
+document.writeln("Ganho total do Hotel R$: ", ganhoTotalHotel);
+document.writeln("</p>");
+
+document.writeln("<p>");
+document.writeln("Ganho total de clientes R$: ", qntCliente);
+document.writeln("</p>");
+
+    </script>
+    
+   
+</body>
+</html>

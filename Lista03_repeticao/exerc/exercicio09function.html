@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica e Algoritmos - Exercícios</title>
+</head>
+
+<body>
+<!--Um hotel cobra R$150,00 a diária e mais uma taxa de serviços. A taxa
+de serviços é de:
+
+ R$8,00 por diária, se o número de diárias for < 15;
+ R$6,30 por diária, se o número de diárias for = 15;
+
+ R$5,00 por diária, se o número de diárias for > 15.
+
+Construa um algoritmo que imprima o nome e a conta de cada cliente do hotel.
+Imprima também o total ganho pelo hotel. -->
+
+    <script type="text/javascript">
+        <!-- insira seu código aqui -->
+
+let nome = prompt("Digite o nome do cliente:");
+let numDiarias = parseInt(prompt(`Digite o número de diárias para o cliente ${nome}:`));
+
+function calcularTaxaServico(numDiarias) {
+    if (numDiarias < 15) {
+        return 8.00;
+    } else if (numDiarias === 15) {
+        return 6.30;
+    } else {
+        return 5.00;
+    }
+}
+
+function calcularConta(nome, numDiarias) {
+    let diaria = 150.00;
+    let taxaServico = calcularTaxaServico(numDiarias);
+    let total = (diaria + taxaServico) * numDiarias;
+    return total;
+}
+
+let total = calcularConta(nome, numDiarias);
+alert(`Nome: ${nome}, A conta do hotel é de: R$${total.toFixed(2)}`);
+
+    </script>
+    
+   
+</body>
+</html>
