@@ -1,0 +1,40 @@
+.sobre-principal {
+    width: 940px;
+    background-color: bisque;
+}
+
+.sobre {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.youtube-sobrenos {
+    padding: 10px;
+}
+
+.video-sobrenos {
+    padding: 10px;
+    width: 600px;
+}
+
+.video-sobrenos video {
+    width: 100%;
+}
+
+.mapa-sobrenos {
+    padding: 10px;
+}
+
+.mapa-sobrenos iframe {
+    border-radius: 4px;
+}
+
+.audio-sobrenos {
+    width: 50%;
+}
+
+.audio-sobrenos audio {
+    width: 100%;
+    border: 1px solid #470864;
+    border-radius: 4px;
+}

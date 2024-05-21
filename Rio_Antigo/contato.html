@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+
+    <!-- fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.                                                 gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima&family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/menu_logo.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/meuestilo.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+
+    <link href="img/favicon_pgmweb.ico" rel="shortcut icon">
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="caixa">
+            <h1 class="logo">
+                <img src="img/rioicon_125x125.png" alt="Logo do site">
+            </h1>
+            <nav class="hmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="imagensrioantigo.html">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-principal">
+            <h2>Converse conosco</h2>
+        </div>
+
+        <div class="divform">
+            <form name="frmContato" id="idFrmContato" action="#" method="POST">
+
+                <fieldset>
+                    <div class="label">
+                        <label for="idNome">Nome</label>
+                    </div>                        
+                    <input type="text" name="nome" id="idNome" maxlength="70" placeholder="Informe o seu Nome">
+
+                    <div class="label">
+                        <label for="idEmail">E-mail</label>
+                    </div>
+                    <input type="text" name="email" id="idEmail" maxlength="100" placeholder="Informe o seu E-mail">
+                    
+                    <div class="label">
+                        <label for="idTelefone">Telefone</label>
+                    </div>
+                    <input type="tel" name="telefone" id="idTelefone" placeholder="Informe o seu Telefone">
+                    
+                    <div class="label">
+                        <label>Gênero</label>
+                    </div>
+                    <input type="radio" name="genero" value="F" id="idGeneroF"><label
+                        for="idGeneroF" class="label-radio">Feminino</label>
+                    <input type="radio" name="genero" value="M" id="idGeneroM"><label
+                        for="idGeneroM" class="label-radio">Masculino</label>
+                    <input type="radio" name="genero" value="O" id="idGeneroO"><label 
+                        for="idGeneroO" class="label-radio">Outros</label>
+
+                    <div class="label">
+                        <label for="idAssunto">Assunto</label>
+                    </div>
+                    <select name="assunto" id="idAssunto">
+                        <option value="0" selected>Selecione...</option>
+                        <option value="E">Elogio</option>
+                        <option value="C">Crítica</option>
+                        <option value="S">Solicitação</option>
+                        <option value="O">Outros</option>
+                    </select>
+
+                    <div class="label">
+                        <label for="idMensagem">Mensagem</label>
+                    </div>
+                    <textarea rows="10" col="200" id="idMensagem" name="mensagem" class="myTextArea" placeholder="Preencha com a mensagem desejada"></textarea>
+
+                    <div class="botoes">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
