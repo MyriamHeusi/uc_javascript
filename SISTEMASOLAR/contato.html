@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem-Vindo!</title>
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/meuestilo.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="menu-logo">
+            <h1>
+                <img src="imagens/sistema-solar.jpg" alt="sistema solar">
+            </h1>
+            <nav id="menu-horizontal">
+                <ul>
+                    <li><a href="sistemasolar.html">Sistema Solar</a></li>
+                    <li><a href="Planetas.html">Planetas e astros</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form name="frmContato" id="idFrmContato" action="#" method="POST">
+
+            <fieldset>
+                <div class="label">
+                    <label for="idNome">Nome</label>
+                </div>                        
+                <input type="text" name="nome" id="idNome" maxlength="70" placeholder="Informe o seu Nome">
+
+                <div class="label">
+                    <label for="idEmail">E-mail</label>
+                </div>
+                <input type="text" name="email" id="idEmail" maxlength="100" placeholder="Informe o seu E-mail">
+                
+                <div class="label">
+                    <label for="idTelefone">Telefone</label>
+                </div>
+                <input type="tel" name="telefone" id="idTelefone" placeholder="Informe o seu Telefone">
+                
+                <div class="label">
+                    <label>Gênero</label>
+                </div>
+                <input type="radio" name="genero" value="F" id="idGeneroF"><label
+                    for="idGeneroF" class="label-radio">Feminino</label>
+                <input type="radio" name="genero" value="M" id="idGeneroM"><label
+                    for="idGeneroM" class="label-radio">Masculino</label>
+                <input type="radio" name="genero" value="O" id="idGeneroO"><label 
+                    for="idGeneroO" class="label-radio">Outros</label>
+
+                <div class="label">
+                    <label for="idAssunto">Assunto</label>
+                </div>
+                <select name="assunto" id="idAssunto">
+                    <option value="0" selected>Selecione...</option>
+                    <option value="E">Elogio</option>
+                    <option value="C">Crítica</option>
+                    <option value="S">Solicitação</option>
+                    <option value="O">Outros</option>
+                </select>
+
+                <div class="label">
+                    <label for="idMensagem">Mensagem</label>
+                </div>
+                <textarea rows="10" col="200" id="idMensagem" name="mensagem" class="myTextArea" placeholder="Preencha com a mensagem desejada"></textarea>
+
+                <div class="botoes">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form name="frmContato" id="idFrmContato" action="#" method="POST">
+
+            <fieldset>
+                <div class="label">
+                    <label for="idNome">Nome</label>
+                </div>                        
+                <input type="text" name="nome" id="idNome" maxlength="70" placeholder="Informe o seu Nome">
+
+                <div class="label">
+                    <label for="idEmail">E-mail</label>
+                </div>
+                <input type="text" name="email" id="idEmail" maxlength="100" placeholder="Informe o seu E-mail">
+                
+                <div class="label">
+                    <label for="idTelefone">Telefone</label>
+                </div>
+                <input type="tel" name="telefone" id="idTelefone" placeholder="Informe o seu Telefone">
+                
+                <div class="label">
+                    <label>Gênero</label>
+                </div>
+                <input type="radio" name="genero" value="F" id="idGeneroF"><label
+                    for="idGeneroF" class="label-radio">Feminino</label>
+                <input type="radio" name="genero" value="M" id="idGeneroM"><label
+                    for="idGeneroM" class="label-radio">Masculino</label>
+                <input type="radio" name="genero" value="O" id="idGeneroO"><label 
+                    for="idGeneroO" class="label-radio">Outros</label>
+
+                <div class="label">
+                    <label for="idAssunto">Assunto</label>
+                </div>
+                <select name="assunto" id="idAssunto">
+                    <option value="0" selected>Selecione...</option>
+                    <option value="E">Elogio</option>
+                    <option value="C">Crítica</option>
+                    <option value="S">Solicitação</option>
+                    <option value="O">Outros</option>
+                </select>
+
+                <div class="label">
+                    <label for="idMensagem">Mensagem</label>
+                </div>
+                <textarea rows="10" col="200" id="idMensagem" name="mensagem" class="myTextArea" placeholder="Preencha com a mensagem desejada"></textarea>
+
+                <div class="botoes">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <!-- Adicione o rodapé do seu site aqui -->
+    </footer>
+
+</body>
+
+</html>

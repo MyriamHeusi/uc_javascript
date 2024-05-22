@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilize uma fonte semelhante à do site original */
+    background-color: #f0f0f0; /* Cor de fundo geral */
+}
+
+main {
+    max-width: 800px; /* Limita a largura do conteúdo principal */
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333; /* Cor dos títulos */
+}
+
+p {
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 20px; /* Espaçamento inferior entre os parágrafos */
+}
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+    background-color: #000; /* Alterado para um tom mais escuro (quase preto) */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px 0;
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: auto;
+}
+
+#imagemlogo {
+    width: 300px;
+}
+
+/* Estilos para o menu horizontal */
+#menu-horizontal ul li {
+    display: inline-block;
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+#menu-horizontal ul li:first-child {
+    margin-left: 0;
+}
+
+#menu-horizontal ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff; /* Cor do texto branco */
+    transition: color 0.3s ease; /* Efeito de transição suave */
+}
+
+#menu-horizontal ul li a:hover {
+    color: #ffcc00; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+#rodape {
+    background-color: #000; /* Alterado para um tom mais escuro (quase preto) */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px 0; /* Espaçamento interno no topo e na base */
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 12px; /* Tamanho da fonte um pouco menor */
+}
+
+#rodape p {
+    margin-bottom: 10px; /* Espaçamento inferior entre os parágrafos */
+}
+
+#rodape p:last-child {
+    margin-bottom: 0; /* Remove o espaçamento inferior do último parágrafo */
+}
+
+/* Estilos para a imagem do logotipo */
+.menu-logo img {
+    width: 150px; /* Redimensiona a imagem do logotipo */
+}
+
+/* Estilos para o texto do rodapé */
+#rodape span {
+    vertical-align: middle;
+}
+
+/* Estilos para ícones */
+.material-icons {
+    font-size: 16px; /* Tamanho dos ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente */
+}
+
+.telefone {
+    margin-left: 5px; /* Espaçamento à esquerda do número de telefone */
+}
