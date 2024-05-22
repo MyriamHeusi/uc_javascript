@@ -1,0 +1,52 @@
+
+/* Reset padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Utilize uma fonte semelhante à do site original */
+}
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+    background-color: #02274e; /* Cor de fundo azul semelhante ao site original */
+    padding: 10px 0;
+}
+
+/* Estilos para o contêiner do menu e logotipo */
+.menu-logo {
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: auto;
+    position: relative;
+}
+
+/* Estilos para o menu horizontal */
+#menu-horizontal {
+    width: inherit;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+#menu-horizontal ul {
+    list-style-type: none;
+}
+
+#menu-horizontal ul li {
+    display: inline-block;
+}
+
+#menu-horizontal ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px; /* Adicione um espaçamento interno ao link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito de transição suave */
+}
+
+#menu-horizontal ul li a:hover {
+    background-color: #004a8f; /* Cor de fundo azul mais escura ao passar o mouse */
+    color: #fff; /* Mantém o texto branco durante o hover */
+}

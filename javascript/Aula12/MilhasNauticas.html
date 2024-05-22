@@ -1,0 +1,44 @@
+!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica e Algoritmos - Exercícios</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        <!-- insira seu código aqui -->
+// Função para converter milhas náuticas em quilômetros
+function milhasParaKm(milhasNauticas) {
+    return milhasNauticas * 1.85;
+}
+
+// Função para converter quilômetros em milhas náuticas
+function kmParaMilhas(kilometros) {
+    return kilometros / 1.85;
+}
+
+// Perguntar ao usuário a distância desejada e a unidade
+const distancia = parseFloat(prompt("Digite a distância desejada:"));
+const unidade = prompt("Escolha a unidade (nm para milhas náuticas, km para quilômetros):");
+
+let resultado;
+
+// Verificar a unidade escolhida e calcular a conversão
+if (unidade === "nm") {
+    resultado = milhasParaKm(distancia);
+    alert(distancia + " milhas náuticas equivalem a " + resultado.toFixed(2) + " quilômetros :)");
+} else if (unidade === "km") {
+    resultado = kmParaMilhas(distancia);
+    alert(distancia + " quilômetros equivalem a " + resultado.toFixed(2) + " milhas náuticas :)");
+} else {
+    alert("Unidade inválida! Por favor, escolha 'nm' para milhas náuticas ou 'km' para quilômetros.");
+}
+    </script>
+    
+</body>
+</html>

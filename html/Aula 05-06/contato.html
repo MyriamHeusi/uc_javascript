@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/meuestilo.css" rel="stylesheet">
+    <link href="css/contato.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="menu-logo">
+            <h1>
+                <img src="imagens/logo senac2.png" alt="logotipo do senac">
+            </h1>
+            <nav id="menu-horizontal">
+                <ul>
+                    <li><a href="pessoal.html">Dados Pessoais</a></li>
+                    <li><a href="apresentacao.html">Apresentação</a></li>
+                    <li><a href="escolaridade.html">Escolaridade</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="experiencia.html">Experiência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="corpo">
+        <div class="titulo-pagina">
+            <h1>Curriculo Digital - Projeto SENAC</h1>
+            <h2>Fale comigo</h2>
+        </div>
+
+        <div class="divForm">
+            <form method="post" action="#">
+                <div class="etiqueta">
+                    <label for="idNome">Nome</label>
+                </div>
+                <input type="text" name="nome" id="idNome" maxlength="70" 
+                placeholder="Informe o seu nome">
+
+                <div class="etiqueta">
+                    <label for="idEmail">E-mail</label>
+                </div>
+                <input type="email" name="email" id="idEmail">
+                
+                <div class="etiqueta">
+                    <label for="idIdade">Idade</label>
+                    <input type="number" min="18" max="120" id="idIdade">
+                </div>
+
+                <div class="etiqueta">
+                    <label for="idAssunto">Assunto</label>
+                    <select name="assunto" id="idAssunto">
+                        <option value="Cadastro">Cadastro</option>
+                        <option value="Duvida">Dúvida</option>
+                        <option value="Fofoca">Fofoca</option>
+                    </select>
+                </div>
+
+                <div class="etiqueta">
+                    <label for="idMensagem">Mensagem</label>
+                    <textarea name="mensagem" rows="20" cols="50"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
